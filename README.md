@@ -5,6 +5,11 @@ angular-image-compress
 
 -----------
 
+Installation
+-------------
+ - Bower -  `bower install angular-image-compress`
+
+
 Usage
 -------
 
