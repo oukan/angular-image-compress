@@ -1,7 +1,7 @@
 /**!
  * AngularJS image compress directive
  * @author  Oukan  <eoukan@gmail.com>
- * @version 0.1.1
+ * @version 0.1.2
  */
 'use strict';
 /*******************************

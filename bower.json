@@ -1,12 +1,12 @@
 {
   "name": "angular-image-compress",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/oukan/angular-image-compress",
   "authors": [
     "eoukan@gmail.com"
   ],
   "description": "compress image files on client side using angularjs",
-  "main": "ng-image-compress.js",
+  "main": "angular-image-compress.js",
   "keywords": [
     "angularjs",
     "angular",
