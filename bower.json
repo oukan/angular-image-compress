@@ -1,0 +1,30 @@
+{
+  "name": "angular-image-compress",
+  "version": "0.1.0",
+  "homepage": "https://github.com/oukan/angular-image-compress",
+  "authors": [
+    "eoukan@gmail.com"
+  ],
+  "description": "compress image files on client side using angularjs",
+  "main": "ng-image-compress.js",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "image",
+    "compress",
+    "jpeg",
+    "png",
+    "client-side",
+    "compression",
+    "JIC",
+    "canvas"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
