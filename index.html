@@ -7,20 +7,19 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <title>angular-image-compress</title>
+    <meta charset="utf-8">
+    <title>angular-image-compress</title>
 </head>
 
 <body ng-app="angNewsApp">
-  <div>
-    <input id="inputImage" type="file" accept="image/*" image="image1" resize-max-height="800" resize-max-width="800" resize-quality="0.7" resize-type="image/jpg" ng-image-compress/> 
-    <img ng-src="{{image1.compressed.dataURL}}" /> <!-- just do a console.log of {{image1}} to see what other options are in the file object -->
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="angular-image-compress.js"></script>
-
-
+    <div>
+        <input id="inputImage" type="file" accept="image/*" image="image1" resize-max-height="800" resize-max-width="800" resize-quality="0.7" resize-type="image/jpg" ng-image-compress/>
+        <img ng-src="{{image1.compressed.dataURL}}" />
+        <!-- just do a console.log of {{image1}} to see what other options are in the file object -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="angular-image-compress.js"></script>
 </body>
 
 </html>
