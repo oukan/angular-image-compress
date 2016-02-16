@@ -5,6 +5,10 @@ angular-image-compress
 
 -----------
 
+Demo
+-------------
+[http://oukan.github.io/angular-image-compress/](http://oukan.github.io/angular-image-compress/)
+
 Installation
 -------------
  - Bower -  `bower install angular-image-compress`
@@ -28,9 +32,6 @@ angular.module('myApp', ['ngImageCompress']);
 ```
 
 **Adjustable: resize-max-height, resize-max-width, resize-quality, resize-type
-
-
-For demo, u can just clone this repo and then run index.html. thanks!!
 
 
 Browser support
