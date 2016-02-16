@@ -32,6 +32,13 @@ angular.module('myApp', ['ngImageCompress']);
 
 For demo, u can just clone this repo and then run index.html. thanks!!
 
+
+Browser support
+-------
+IE9+, Google Chrome, Firefox, Edge, Safari... 
+
+[List](http://caniuse.com/#search=canvas)
+
 License
 -------
 
