@@ -164,24 +164,19 @@
                     };
 
                     var applyScope = function(imageResult) {
-                        scope.$apply(function() {
-                            if (attrs.multiple) {
-                                scope.image.push(imageResult);
-                            } else {
-                                scope.image = imageResult;
-                            }
-                        });
+                        if (attrs.multiple) {
+                            scope.image.push(imageResult);
+                        } else {
+                            scope.image = imageResult;
+                        }
                     };
 
 
-                    element.bind('change', function(evt) {
-                        //when multiple always return an array of images
-                        if (attrs.multiple) {
-                            scope.image = [];
+                    function processFiles(i, files) {
+                        if (i >= files.length){
+                            return;
                         }
-
-                        var files = evt.target.files;
-                        for (var i = 0; i < files.length; i++) {
+                        else {
                             //create a result object for each file in files
                             var imageResult = {
                                 file: files[i],
@@ -190,16 +185,31 @@
 
                             fileToDataURL(files[i]).then(function(dataURL) {
                                 imageResult.dataURL = dataURL;
+                                if (scope.resizeMaxHeight || scope.resizeMaxWidth) { //resize image
+                                    doResizing(imageResult, function(imageResult) {
+                                        applyScope(imageResult);
+                                        processFiles(i+1, files);
+                                    });
+                                } else { //no resizing
+                                    applyScope(imageResult);
+                                    processFiles(i+1, files);
+                                }
                             });
 
-                            if (scope.resizeMaxHeight || scope.resizeMaxWidth) { //resize image
-                                doResizing(imageResult, function(imageResult) {
-                                    applyScope(imageResult);
-                                });
-                            } else { //no resizing
-                                applyScope(imageResult);
-                            }
                         }
+                    }
+
+                    element.bind('change', function(evt) {
+                        //when multiple always return an array of images
+                        if (attrs.multiple) {
+                            scope.image = [];
+                        }
+
+                        var files = evt.target.files;
+
+                        var processStartFrom = 0;
+
+                        processFiles(processStartFrom, files);
                     });
                 }
             };
