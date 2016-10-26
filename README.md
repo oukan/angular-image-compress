@@ -33,6 +33,10 @@ angular.module('myApp', ['ngImageCompress']);
 
 **Adjustable: resize-max-height, resize-max-width, resize-quality, resize-type
 
+Angular support
+-------
+support 1.x version, no test in Angular 2.
+
 
 Browser support
 -------

@@ -1,0 +1,40 @@
+{
+  "name": "angular-image-compress",
+  "version": "0.1.5",
+  "description": "compress image files on client side using angularjs",
+  "main": "angular-image-compress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oukan/angular-image-compress.git"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "image",
+    "compress",
+    "jpeg",
+    "png",
+    "client-side",
+    "compression",
+    "JIC",
+    "canvas"
+  ],
+  "maintainers": [
+    {
+      "name": "oukan",
+      "email": "eoukan@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "angular-image-compress.js",
+  "bugs": {
+    "url": "https://github.com/oukan/angular-image-compress/issues"
+  },
+  "homepage": "https://github.com/oukan/angular-image-compress#readme",
+  "dependencies": {
+    "angular": "~1.2.0"
+  }
+}
