@@ -1,7 +1,7 @@
 angular-image-compress
 =================
 
-######This Angular directive compresses jpeg or png files using angularjs on client side. It uses using HTML5 Canvas &amp; File API. The compression algorithm is based off of the ng-image-compress and J-I-C project on github. 
+######This Angular directive compresses jpeg or png files using angularjs on client side. It uses using HTML5 Canvas &amp; File API. The compression algorithm is based off of the ng-image-compress and J-I-C project on github.
 
 -----------
 
@@ -12,6 +12,7 @@ Demo
 Installation
 -------------
  - Bower -  `bower install angular-image-compress`
+ - NPM -  `npm install angular-image-compress`
 
 
 Usage
@@ -40,7 +41,7 @@ support 1.x version, no test in Angular 2.
 
 Browser support
 -------
-IE9+, Google Chrome, Firefox, Edge, Safari... 
+IE9+, Google Chrome, Firefox, Edge, Safari...
 
 [List](http://caniuse.com/#search=canvas)
 
