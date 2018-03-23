@@ -49,7 +49,7 @@
                 var mimeType = '';
                 if (outputFormat !== undefined && outputFormat === 'png') {
                     mimeType = 'image/png';
-                } else if (outputFormat !== undefined && (outputFormat === 'jpg' || outputFormat === 'jpeg')) {
+                } else if (outputFormat !== undefined && (outputFormat === 'jpg' || outputFormat === 'jpeg' || outputFormat === 'image/jpg' || outputFormat === 'image/jpeg')) {
                     mimeType = 'image/jpeg';
                 } else {
                     mimeType = outputFormat;
