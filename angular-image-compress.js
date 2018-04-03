@@ -46,9 +46,13 @@
             var jicCompress = function(sourceImgObj, options) {
                 var outputFormat = options.resizeType;
                 var quality = options.resizeQuality * 100 || 70;
-                var mimeType = 'image/jpeg';
+                var mimeType = '';
                 if (outputFormat !== undefined && outputFormat === 'png') {
                     mimeType = 'image/png';
+                } else if (outputFormat !== undefined && (outputFormat === 'jpg' || outputFormat === 'jpeg' || outputFormat === 'image/jpg' || outputFormat === 'image/jpeg')) {
+                    mimeType = 'image/jpeg';
+                } else {
+                    mimeType = outputFormat;
                 }
 
 
@@ -182,6 +186,9 @@
 
                         var files = evt.target.files;
                         for (var i = 0; i < files.length; i++) {
+                            if (scope.resizeType === undefined || scope.resizeType == '') {
+                                scope.resizeType = files[i].type;
+                            }
                             //create a result object for each file in files
                             var imageResult = {
                                 file: files[i],
