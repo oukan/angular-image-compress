@@ -35,6 +35,6 @@
   },
   "homepage": "https://github.com/oukan/angular-image-compress#readme",
   "dependencies": {
-    "angular": "~1.2.0"
+    "angular": "~1.7.9"
   }
 }
